@@ -1,0 +1,185 @@
+{% extends 'base.html' %}
+{% block content %}
+{% load static %}
+
+<section class="luxury-hero">
+    
+    <div class="hero-image-container">
+       <!-- <img src="{% static 'images/hero-bg2.jpg' %}" alt="Empowered women together" class="hero-image">-->
+    </div>
+    <div class="hero-text-overlay">
+        <h1>SISTERHOOD IN ACTION</h1>
+        <p class="hero-subtitle">Building connections, sisterhood and empowerment</p>
+        <a href="{% url 'events' %}" class="hero-cta">View Upcoming Events</a>
+    </div>
+</section>
+
+<div class = "boxes">
+    <div class = "boxpic">
+        <img src ="{% static 'images/yop.png '%}" width = "100%">
+    </div>
+    <div class = "boxtext">
+        <h3>Description</h3>
+        <p>A Muslim sisters-founded group dedicated to fostering connection, sisterhood, and empowerment within the community for all women. Our activities include discussions, advocacy, sharing circles, travel, hikes, fitness, and strengthening bonds while amplifying every member’s voice. We also create opportunities for club members to lead social events. Here, everyone gets to be a part of the community and get involved.</p>
+    </div>
+</div>
+
+<div class = "boxes">
+    <div class = "boxpic">
+        <img src ="{% static 'images/yop.png '%}" width = "100%">
+    </div>
+    <div class = "boxtext">
+        <h3>Club Mission</h3>
+        <p>Our mission is to create a safe and inclusive space where everyone can contribute, lead, grow, and network. We provide opportunities for leadership, mentorship, personal development, and raising awareness about real-life issues. Together, we tackle challenges, spread awareness, support one another, and work together as a community.</p>
+        
+        <!--JOIN BUTTON!!!-->
+        <button class="btn">JOIN OUR CLUB</button>
+    </div>
+</div>
+
+<div class = "teambox">
+    <div class = "title">
+        <h4>Meet the team</h4>
+    </div>
+
+    <div class = card_container>
+
+        <div class = "card">
+
+            <div class = "imbBx">
+                <img src ="{% static 'images/laila.png' %}" alt = "">
+            </div>
+
+            <div class = "content">
+                <div class = "contentBx">
+                    <h3>Laila Malik<br><span>President</span></h3> 
+                </div>
+                <ul class="sci">
+                    <li style="--i: 1">
+                        <a href = "https://www.instagram.com/officially_lailamalik/?utm_source=ig_web_button_share_sheet" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    </li>
+                    <li style="--i: 2">
+                        <a href = "mailto:lmali847@mtroyal.ca" ><i class="fa-solid fa-envelope"></i></a>
+                    </li>
+                    <li style="--i: 3">
+                        <a href = "#" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    </li>
+
+                </ul>   
+            </div>
+
+        </div>
+
+        <div class = "card">
+
+            <div class = "imbBx">
+                <img src ="{% static 'images/laila.png' %}" alt = "">
+            </div>
+
+            <div class = "content">
+                <div class = "contentBx">
+                    <h3>Fatima<br><span>Events Coordinator</span></h3> 
+                </div>
+                <ul class="sci">
+                    <!--
+                    <li style="--i: 1">
+                        <a href = "#"><i class="fa-brands fa-instagram"></i></a>
+                    </li>
+                    -->
+                    <li style="--i: 2">
+                        <a href = "mailto:falizz229@mtroyal.ca" target="_blank"><i class="fa-solid fa-envelope"></i></a>
+                    </li>
+                    <li style="--i: 3">
+                        <a href = "#" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    </li>
+
+                </ul>   
+            </div>
+
+        </div>
+
+        <div class = "card">
+
+            <div class = "imbBx">
+                <img src ="{% static 'images/samrah.png' %}" alt = "">
+            </div>
+
+            <div class = "content">
+                <div class = "contentBx">
+                    <h3>Samrah<br><span>VP communications</span></h3> 
+                </div>
+                <ul class="sci">
+                    <li style="--i: 1">
+                        <a href = "https://www.instagram.com/smrr_.10/?utm_source=ig_web_button_share_sheet" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    </li>
+                    <li style="--i: 2">
+                        <a href = "mailto:safsa313@mtroyal.ca" target="_blank"><i class="fa-solid fa-envelope"></i></a>
+                    </li>
+                    <li style="--i: 3">
+                        <a href = "#" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    </li>
+
+                </ul>   
+            </div>
+
+        </div>
+
+        <div class = "card">
+
+            <div class = "imbBx">
+                <img src ="{% static 'images/laila.png' %}" alt = "">
+            </div>
+
+            <div class = "content">
+                <div class = "contentBx">
+                    <h3>Nili<br><span>VP Finance</span></h3> 
+                </div>
+                <ul class="sci">
+                    <!--
+                    <li style="--i: 1">
+                        <a href = "#"><i class="fa-brands fa-instagram"></i></a>
+                    </li>
+                    -->
+                    <li style="--i: 2">
+                        <a href = "mailto:ngand651@mtroyal.ca" target="_blank"><i class="fa-solid fa-envelope"></i></a>
+                    </li>
+                    <li style="--i: 3">
+                        <a href = "https://www.linkedin.com/in/nill-gandhi-32b5622a6" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    </li>
+
+                </ul>   
+            </div>
+
+        </div>
+        
+        <div class = "card">
+
+            <div class = "imbBx">
+                <img src ="{% static 'images/kenza.png' %}" alt = "">
+            </div>
+
+            <div class = "content">
+                <div class = "contentBx">
+                    <h3>Kenza<br><span>Recreational Director</span></h3> 
+                </div>
+                <ul class="sci">
+                    <!--
+                    <li style="--i: 1">
+                        <a href = "#"><i class="fa-brands fa-instagram"></i></a>
+                    </li>
+                    -->
+                    <li style="--i: 2">
+                        <a href = "mailto:kfila993@mtroyal.ca"><i class="fa-solid fa-envelope"></i></a>
+                    </li>
+                    <li style="--i: 3">
+                        <a href = "https://www.linkedin.com/me?trk=p_mwlite_feed-secondary_nav" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    </li>
+
+                </ul>   
+            </div>
+
+        </div>
+
+    </div>   
+</div>
+{% endblock %}

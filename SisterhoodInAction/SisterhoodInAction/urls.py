@@ -17,9 +17,14 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
-#from pages.views import home_view, 
+from Events.views import event_detail_view
+from pages.views import home_view, about_view, progress_view
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    #path('', )
+    path('', home_view, name = "home"),
+    path('about', about_view, name = "about"),
+    path('progress', progress_view, name = "progress"),
+    path('event_calendar', event_detail_view, name = "events")
 ]
+
